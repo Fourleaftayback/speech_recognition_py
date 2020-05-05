@@ -1,6 +1,6 @@
 /venv
 
 .gitignore
-.ideal
+.idea
 
 __pycache__
