@@ -1,4 +1,6 @@
 /venv
-/.gitignore
-/.ideal
-/__pycache__
+
+.gitignore
+.ideal
+
+__pycache__
