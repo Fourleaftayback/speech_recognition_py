@@ -29,14 +29,12 @@ def respond(voice_data):
         current_time = datetime.datetime.now()
         speak.play_sound(current_time.strftime("%I:%M:%S %p"))
     if 'search' in voice_data:
-        # figure out what is going on with this line
         search = record_audio("What do you want to search for?")
         url = 'http://google.com/search?q=' + search
         speak.play_sound(url)
         webbrowser.get().open(url)
         speak.play_sound('Here is what I found for ' + search)
     if 'find location' in voice_data:
-        # figure out what is going on with this line
         location = record_audio("What is the location")
         url = 'http://google.nl/maps/place/' + location
         speak.play_sound(url)
